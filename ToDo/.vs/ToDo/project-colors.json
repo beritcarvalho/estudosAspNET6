@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "c56f2372-9bd4-4953-be2e-19972f2064c4": {
+      "ProjectGuid": "c56f2372-9bd4-4953-be2e-19972f2064c4",
+      "DisplayName": "ToDo",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
