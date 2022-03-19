@@ -10,7 +10,7 @@ using ToDo.Data;
 
 namespace ToDo.Migrations
 {
-    [DbContext(typeof(AppDbContex))]
+    [DbContext(typeof(AppDbContext))]
     [Migration("20220303234421_CreateDatabase")]
     partial class CreateDatabase
     {

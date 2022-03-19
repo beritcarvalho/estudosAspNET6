@@ -3,7 +3,7 @@ using ToDo.Models;
 
 namespace ToDo.Data
 {
-    public class AppDbContex : DbContext
+    public class AppDbContext : DbContext
     {
         public DbSet<TodoModel> Todos { get; set; }
 
