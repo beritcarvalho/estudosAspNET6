@@ -1,7 +1,11 @@
-﻿namespace Blog.ViewModels
+﻿using Blog.Models;
+
+namespace Blog.ViewModels
 {
     public class ResultViewModel<T>
     {
+        private User user;
+
         public ResultViewModel(T data, List<string> errors)
         {
             Data = data;

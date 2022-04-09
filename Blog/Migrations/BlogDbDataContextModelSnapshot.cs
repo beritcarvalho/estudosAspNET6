@@ -151,9 +151,7 @@ namespace Blog.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("Bio")
-                        .IsRequired()
-                        .HasColumnType("TEXT")
-                        .HasColumnName("Bio");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -161,14 +159,7 @@ namespace Blog.Migrations
                         .HasColumnType("VARCHAR(200)")
                         .HasColumnName("Email");
 
-                    b.Property<string>("GitHub")
-                        .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("VARCHAR(200)")
-                        .HasColumnName("GitHub");
-
                     b.Property<string>("Image")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")

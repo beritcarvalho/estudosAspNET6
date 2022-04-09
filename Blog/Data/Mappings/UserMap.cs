@@ -55,9 +55,12 @@ namespace Blog.Data.Mappings
 
             //Constrainsts da coluna Bio
             builder.Property(x => x.Bio)
-                .IsRequired() // IS NOT NULL
-                .HasColumnName("Bio") //Definando a coluna e o nome.
-                .HasColumnType("TEXT"); //tipo da coluna   
+                .IsRequired(false); // IS NOT NULL
+                                    //.HasColumnName("Bio") //Definando a coluna e o nome.
+                                    //.HasColumnType("TEXT"); //tipo da coluna   
+
+            //Constrainsts da coluna Image
+            builder.Property(x => x.Image).IsRequired(false);
 
             //Constrainsts da coluna Slug
             builder.Property(x => x.Slug)
@@ -75,10 +78,10 @@ namespace Blog.Data.Mappings
                                     // 
 
             //Constrainsts da coluna Gitub
-            builder.Property(x => x.GitHub)                
-                .HasColumnName("GitHub") //Definando a coluna e o nome.
-                .HasColumnType("VARCHAR") //tipo da coluna
-                .HasMaxLength(200); // tamanho máximo da coluna.
+           // builder.Property(x => x.GitHub)                
+              //  .HasColumnName("GitHub") //Definando a coluna e o nome.
+             //   .HasColumnType("VARCHAR") //tipo da coluna
+           //     .HasMaxLength(200); // tamanho máximo da coluna.
 
             //DEFININDO OS INDICES
             /*

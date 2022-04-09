@@ -1,4 +1,5 @@
 ﻿//Healthcheck - Chegagem de saude, realizar um endpoint para saber se api está online ou não
+using Blog.Attributes;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Blog.Controllers

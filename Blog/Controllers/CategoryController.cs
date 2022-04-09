@@ -74,6 +74,10 @@ namespace Blog.Controllers
             {
                 return StatusCode(500, new ResultViewModel<List<Category>>("ERR-05X04 Não foi possível incluir a categoria"));
             }
+            catch
+            {
+                return StatusCode(500, new ResultViewModel<List<Category>>("ERR-05X011 Falha interna no servidor"));
+            }
 
         }
 
